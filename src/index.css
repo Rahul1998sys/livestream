@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'outfit', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 8%;
+    min-height: 100vh;
+    position: relative;
+}
+
+.content{
+    max-width: 600px;
+    z-index: 2;
+}
+
+.content h1{
+    font-size: 3.5rem;
+    line-height: 1.2;
+}
+
+.content h1 span{
+    color: #00c6ff;
+}
+
+.content p{
+    font-size: 1.2rem;
+    margin: 1.5rem 0 2rem;
+    color: #ddd;
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.65rem 1rem;
+    background: linear-gradient(135deg, #00c6ff, #2d8d91);
+    color: #0c0c0c;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn:hover{
+    background: linear-gradient(135deg, #286163, #00c6ff);
+}
+
+.image-container{
+    max-width: 600px;
+    animation: SlideIn 1s ease-out forwards;
+    /* opacity: 0; */
+}
+
+.image-container img{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+
+/* ///Animation */
+
+@keyframes fadeIn{
+    0%{
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes SlideIn{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.fade-in{
+    animation: fadeIn 1.5s forwards;
+    opacity: 0;
+}
+
+/* .slide-in{
+    animation: SlideIn 1.5s forwards;
+    opacity: 0;
+} */
+
+.delay-1{
+    animation-delay: 0.5s;
+}
+
+.delay-2{
+    animation-delay: 1s;
+}
+
+
+/* =========== */
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 5rem 8%; */
+    height: 100vh;
+    flex-direction: column;
+}
+
+
+.form-container h1{
+    font-size: 2.5rem;
+    margin-bottom: 2opx;
+}
+
+.form-group input[type="text"]{
+    width: 250px;
+    height: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    color: #333;
+    font-size: 1rem;
+}
+
+
+.form-group button{
+    width: 100px;
+    height: 45px;
+    margin-left: 20px;
+    background: linear-gradient(135deg, #5dcfd3, #00c6ff);
+    color: #f5f1f1;
+    border-radius: 10px 0px 20px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form-group button:hover{
+    background: #0f2027;
+    color: #fff;
+}
