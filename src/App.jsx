@@ -10,7 +10,7 @@ function App() {
       <Routes>
         <Route path='/' element= {<Home />} />
         <Route path='/live-stream' element= {<Room />} />
-        <Route path='/live-stream/stream/:userName' element= {<Streaming />} />
+        <Route path='/live-stream/stream/:userName' element = {<Streaming />} />
       </Routes>
     </>
   )
